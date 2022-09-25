@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <title>Coder Gen İletişim</title>
+    <link rel="shortcut icon" href="./assets/images/Youtube img aktif.png" type="image/x-icon"/>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="login">
+        <span style="font-size: 18px;">Sohbete bağlanmak için isminizi giriniz</span>
+        <input
+          type="text"
+          id="myName"
+          placeholder="İsim Giriniz"
+          autocomplete="off"
+        />
+        <span class="alert hidden"></span>
+        <button onclick="startChat();">
+          <i class="fa fa-comment"></i> Sohbete Başla
+        </button>
+      </div>
+      <h2>Genc Coder Chat App</h2>
+      <ul id="messages" class="messages">
+        <li class="message">
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+            accusamus fugiat doloribus magnam similique dicta in, nihil quasi
+            itaque. Eligendi voluptatibus, hic non aspernatur tempore ad ipsam
+            libero exercitationem iste?
+          </p>
+          <span class="sender"> Abone</span>
+          <span class="date">12:00</span>
+        </li>
+        <li class="message mine">
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+            accusamus fugiat doloribus magnam similique dicta in, nihil quasi
+            itaque. Eligendi voluptatibus, hic non aspernatur tempore ad ipsam
+            libero exercitationem iste?
+          </p>
+          <span class="date">12:00</span>
+        </li>
+      </ul>
+      <div class="input">
+        <input type="text" id="myInput" placeholder="Mesajınız..." />
+        <button onclick="sendMessage();">
+          <i class="fa fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="authors">
+      <span class="title">Yapımcılar</span>
+      <span
+        ><i class="fa-solid fa-crown"></i> Ertuğrul Emre Cihan
+        <a class="link" href="https://www.instagram.com/meraklicoder/" target="_blank">Meraklı Coder</a
+        >
+        <a href="https://github.com/ertugrulchn" target="_blank"><i class="fa-brands fa-github"></i></a
+      ></span>
+      <span
+      ><i class="fa-solid fa-crown"></i> Abdülkadir Serdar
+      <a class="link" href="https://www.instagram.com/coder_genc_44_61/" target="_blank">Coder Genç</a
+      >
+      <a href="https://github.com/serdarabdulkadir" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </span>
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+    <script src="./assets/js/firebaseConfig.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
